@@ -183,7 +183,7 @@ func (i *Input) Prompt(config *PromptConfig) (interface{}, error) {
 
 	i.answer = string(line)
 	// readline print an empty line, go up before we render the follow up
-	cursor.Up(1)
+	// cursor.Up(1)
 
 	// if we ran into the help string
 	if i.answer == config.HelpInput && i.Help != "" {
